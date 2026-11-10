@@ -1,3 +1,3 @@
-name: Claude Terminal for Home Assistant
-url: https://github.com/heytcass/home-assistant-addons
-maintainer: Tom Cassady <heytcass@gmail.com>
+name: HA Claude Add-on (Martin)
+url: https://github.com/martinabbservcom/HAClaudeAddon
+maintainer: Martin Abbott

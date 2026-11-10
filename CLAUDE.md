@@ -1,3 +1,14 @@
+# Fork notes (Martin's private fork)
+
+This is a private fork of heytcass/home-assistant-addons (MIT), kept as `upstream` remote. Changes from upstream:
+- No prebuilt `image:` in config.yaml, so Home Assistant builds the add-on locally from this repo's Dockerfile (what is reviewed is what runs).
+- `enable_ha_mcp` defaults to false (no third-party MCP server downloaded at start-up).
+- CI workflows removed (they published images to upstream's registry and used upstream's secrets).
+- Version suffixed `-ha1`; bump the suffix on every change so the Supervisor offers the update.
+To take upstream changes: `git fetch upstream && git merge upstream/main`, then re-check the points above.
+
+---
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
